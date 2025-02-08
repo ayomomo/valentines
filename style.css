@@ -1,13 +1,27 @@
 /* style.css */
-body{
-    background:linear-gradient(#e7a8cf, #f55384);
-    background-attachment: fixed; 
-    margin: 0;
-    padding: 0;
-    text-align:center;
-    color:#f2f2f2;
+body {
+    font-family: Arial, sans-serif; 
+    text-align: center; 
+    margin: 0; 
+    background-color: #FADADD; 
 }
-
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+#image-container {
+    /* This container will hold the images */
+}
+#question {
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+}
+#options {
+    margin-top: 20px;
+}
 button {
     padding: 10px 20px; 
     margin: 0 10px; 
@@ -19,19 +33,6 @@ button {
     cursor: pointer; 
 }
 
-#container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-}
 
-#question {
-    font-family: 'Sacramento', cursive;
-    font-size: 50px;
-}
 
-#options {
-    margin-top: 20px;
-}
+
