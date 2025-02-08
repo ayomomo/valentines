@@ -1,38 +1,46 @@
-/* style.css */
 body {
     font-family: Arial, sans-serif; 
     text-align: center; 
     margin: 0; 
     background-color: #FADADD; 
 }
-#container {
+
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh; 
+    position: relative; /* Allows No button movement */
 }
-#image-container {
-    /* This container will hold the images */
+
+#image-container img {
+    max-width: 300px;
+    height: auto;
 }
-#question {
+
+.question {
     font-family: 'Sacramento', cursive;
     font-size: 50px;
-}
-#options {
     margin-top: 20px;
 }
+
+#options {
+    margin-top: 20px;
+    position: relative; /* Needed for button movement */
+}
+
 button {
     padding: 10px 20px; 
-    margin: 0 10px; 
+    margin: 10px; 
     font-size: 26px; 
     font-family: 'Sacramento', cursive; 
     background-color: #FB607F; 
     color: white; 
     border: none; 
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-
-
-
+.no-btn {
+    position: relative; /* Allows movement */
+}
