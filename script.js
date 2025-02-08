@@ -1,3 +1,5 @@
+/*script.js*/
+
 function selectOption(option){
     if(option == 'yes'){
         document.getElementById('question').style.display = 'none';
@@ -27,7 +29,7 @@ function displayCatSilly(){
     document.getElementById('image-container').innerHTML = '';
     var imageContainer = document.getElementById('image-container');
     var catSillyImg = new Image();
-    catSilly.src = 'cat-silly.gif';
+    catSillyImg.src = 'cat-silly.gif';
     catSillyImg.onload = function() {
         imageContainer.appendChild(catSillyImg);
         document.getElementById('options').style.display = 'none';
