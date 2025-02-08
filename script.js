@@ -2,7 +2,7 @@
 
 function selectOption(option){
     if(option == 'yes'){
-        document.getElementById('question').style.display = 'none';
+        document.getElementById('question').innerText = 'YAYYY!!! ILY!';
         displayCatSilly();
     } else if (option == 'no'){
         document.getElementById('no-button').innerText = 'Really?';
