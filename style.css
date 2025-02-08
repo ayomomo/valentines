@@ -27,11 +27,9 @@ body, html {
 
 /* Question text */
 #question {
-    font-family: "nouvelle-vague", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Sacramento', cursive;
     font-size: 50px;
-    text-align: center; /* Ensure text is centered */
+    text-align: center;
 }
 
 /* Button container */
@@ -43,14 +41,21 @@ body, html {
 
 /* Button styling */
 button {
+    transition: 0.4s ease-in-out;
     padding: 10px 20px; 
     margin: 0 10px; 
-    font-size: 26px; 
-    font-family: "nouvelle-vague", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    background-color: #FB607F; 
+    font-size: 26px; /* Set font size for buttons */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */ 
+    border-radius: 12px;
+    border: 2px dotted #bd2679; /* Fix: Visible dotted border */
+    background-color: #FB607F; /* Fix: Default background */
     color: white; 
-    border: none; 
     cursor: pointer; 
+}
+
+/* Button hover effect */
+button:hover {
+    border-radius: 50%;
+    background-color: #bd2679; /* Slightly darker on hover */
+    color: white;
 }
